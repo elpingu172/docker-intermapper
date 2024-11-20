@@ -14,7 +14,7 @@ RUN yum -y update && \
       psmisc \
       which \
       && \
-    curl -o /tmp/${PACKAGE} -L "http://www.helpsystems.com/download/5726/${PACKAGE}/trial?full_name=dsfsd&company_name=sadfsd&bid=34&product_name=InterMapper+for+64-bit+RedHat" && \
+    curl -o /tmp/${PACKAGE} -L "https://anfadmin.ucsd.edu/linux/RHEL/7/x86_64/" && \
     yum -y --nogpgcheck localinstall /tmp/${PACKAGE} && \
     rm -f /tmp/${PACKAGE} && \
     yum clean all
